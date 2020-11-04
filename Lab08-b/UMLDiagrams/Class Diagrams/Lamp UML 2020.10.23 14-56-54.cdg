@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Lamp UML">
+  <ClassDiagramComponents>
+    <Class name="DeskLamp" package="lamp.uml" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="canBendAround" type="boolean" visibility="private"/>
+        <Field name="hasLEDBulb" type="boolean" visibility="private"/>
+        <Field name="LEDColor" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="adjustLamp" returnType="void" visibility="public"/>
+        <Method name="getLEDColor" returnType="String" visibility="public"/>
+        <Method name="setLEDColor" returnType="void" visibility="public">
+          <Argument type="String" name="s"/>
+        </Method>
+        <Method name="hasLEDBulb" returnType="boolean" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Lamp" package="lamp.uml" visibility="public" xPosition="320.0" yPosition="20.0">
+      <Fields>
+        <Field name="instance" type="Lamp" visibility="private" isStatic="true"/>
+        <Field name="lampShadeColor" type="String" visibility="private"/>
+        <Field name="isOn" type="boolean" visibility="private"/>
+        <Field name="hasLightBulb" type="boolean" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="getInstance" returnType="Lamp" visibility="public" isStatic="true"/>
+        <Method name="getLampShadeColor" returnType="String" visibility="public"/>
+        <Method name="setLampShadeColor" returnType="void" visibility="public">
+          <Argument type="String" name="s"/>
+        </Method>
+        <Method name="isOn" returnType="boolean" visibility="public"/>
+        <Method name="isOff" returnType="boolean" visibility="public"/>
+        <Method name="hasLightBulb" returnType="boolean" visibility="public"/>
+        <Method name="toString" returnType="String" visibility="public"/>
+        <Method name="hasElectricty" returnType="void" visibility="public"/>
+        <Method name="pushButton" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="LampLab" package="lamp.uml" visibility="public" xPosition="620.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="StandingLamp" package="lamp.uml" visibility="public" xPosition="920.0" yPosition="20.0">
+      <Fields>
+        <Field name="flipSwitch" type="boolean" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="flipFlipSwitch" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Enum name="States" package="lamp.uml" visibility="public" xPosition="1220.0" yPosition="20.0">
+      <Literals>
+        <Literal name="ON"/>
+        <Literal name="OFF"/>
+      </Literals>
+    </Enum>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <UseRelation source="lamp.uml.Lamp" target="lamp.uml.Lamp" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="instance" source="lamp.uml.Lamp" target="lamp.uml.Lamp" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="lamp.uml.StandingLamp" target="lamp.uml.Lamp"/>
+    <IsRelation name="is" source="lamp.uml.DeskLamp" target="lamp.uml.Lamp"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

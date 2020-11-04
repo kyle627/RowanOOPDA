@@ -1,0 +1,17 @@
+Kyle Evangelisto Lab 5A
+
+1. B::f1()
+2. A::f1() is overloaded, f1(int n1) has the same name in class A.
+3. B::f1(int n1) is the override. B is the subclass and B::f1(int n1) 
+overrides in the super class.
+4. Yes Statement 2 is legal. It calls the subclass which has access to the superclass
+and therefore access to A::f2(int n1)
+5. No, the field var2 is not visible in the call int num3 = b.var2; And there is no
+getter method displayed in the document.
+6. Yes, it is legal, A can be a new B because A is the super class 
+or parent of B.
+7. Superclass is A. Subclass is B.
+7b. Derived class is B. Child class is B.
+8. Private methods are inherrited from the super class but they 
+can't be changed or altered at all. However all or some of those methods 
+can change the instance variables
