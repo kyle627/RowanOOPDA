@@ -1,4 +1,4 @@
-module Hw11 {
+module module.java {
 	requires javafx.graphics;
 	exports application;
 }
