@@ -16,6 +16,7 @@ public class Student {
 		this.major = major;
 	}
 	
+
 	public String getName() {
 		return name;
 	}
