@@ -1,6 +1,5 @@
-module Lab13 {
+module Lab14A {
 	requires javafx.graphics;
 	requires javafx.controls;
-	requires java.desktop;
 	exports application;
 }

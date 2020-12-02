@@ -70,7 +70,7 @@ public class Driver extends Application {
 				JOptionPane.showMessageDialog(null, globalName + " Got it Right!");
 			}else {
 				//answer.setText("Incorrect!");
-				JOptionPane.showMessageDialog(null, "Got it Wrong!", 
+				JOptionPane.showMessageDialog(null, globalName + " Got it Wrong!", 
 						"Incorrect Answer Box", JOptionPane.ERROR_MESSAGE);
 				
 			}
