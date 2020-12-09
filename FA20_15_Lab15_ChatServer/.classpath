@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="FA20_15_Lab15_ChatServer/src"/>
+	<classpathentry kind="output" path="FA20_15_Lab15_ChatServer/bin"/>
+</classpath>
